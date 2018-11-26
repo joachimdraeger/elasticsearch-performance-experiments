@@ -1,0 +1,30 @@
+{
+  "mappings" : {
+    "_doc" : {
+      "properties" : {
+        "id" : {
+          "type" : "keyword"
+        },
+        "published" : {
+          "type" : "date"
+        },
+        "title" : {
+          "type" : "text"
+        },
+        "content" : {
+          "type" : "text"
+        },
+        "source" : {
+          "type" : "text"
+        },
+        "media-type" : {
+          "type" : "keyword"
+        }
+      }
+    }
+  },
+  "settings" : {
+    "number_of_replicas" : 0,
+    "number_of_shards": 5
+  }
+}
