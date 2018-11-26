@@ -1,0 +1,36 @@
+{
+  "query": {
+    "bool" : {
+      "must" : [
+        {
+          "bool" : {
+              "should" : [
+                {"term" : { "content" : "vw" }},
+                {"term" : { "content" : "volkswagen" }},
+                {"term" : { "content" : "porsche" }},
+                {"term" : { "content" : "audi" }},
+                {"term" : { "content" : "seat" }},
+                {"term" : { "content" : "skoda" }},
+                {"term" : { "content" : "winterkorn" }}
+              ]
+          }
+        },
+        {
+          "bool" : {
+            "should" : [
+              {"term" : { "content" : "diesel" }},
+              {"term" : { "content" : "cheat" }},
+              {"term" : { "content" : "dieselgate" }},
+              {"term" : { "content" : "emission" }},
+              {"term" : { "content" : "defeat device" }},
+              {"term" : { "content" : "scandal" }},
+              {"term" : { "content" : "falsified" }},
+              {"term" : { "content" : "fraud" }},
+              {"term" : { "content" : "manipulated" }}
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

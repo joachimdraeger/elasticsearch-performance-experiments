@@ -1,0 +1,24 @@
+{
+  "query": {
+    "bool" : {
+      "must" : [
+        {
+          "bool" : {
+              "should" : [
+                {"term" : { "content" : "vw" }},
+                {"term" : { "content" : "volkswagen" }}
+              ]
+          }
+        },
+        {
+          "bool" : {
+            "should" : [
+              {"term" : { "content" : "emission" }},
+              {"term" : { "content" : "scandal" }}
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
